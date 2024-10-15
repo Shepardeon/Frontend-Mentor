@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'RedHatText';
+  font-display: swap;
+  font-weight: 300 700;
+  src: url('assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  --clr-primary-hsl: 14, 86%, 42%;
+  --clr-secondary-hsl: 159, 69%, 38%;
+
+  --clr-rose-hsl-50: 20, 50%, 98%;
+  --clr-rose-hsl-100: 13, 31%, 94%;
+  --clr-rose-hsl-300: 14, 25%, 72%;
+  --clr-rose-hsl-400: 7, 20%, 60%;
+  --clr-rose-hsl-500: 12, 20%, 44%;
+  --clr-rose-hsl-900: 14, 65%, 9%;
+
+  --clr-primary: hsl(var(--clr-primary-hsl));
+  --clr-secondary: hsl(var(--clr-secondary-hsl));
+
+  --clr-rose-50: hsl(var(--clr-rose-hsl-50));
+  --clr-rose-100: hsl(var(--clr-rose-hsl-100));
+  --clr-rose-300: hsl(var(--clr-rose-hsl-300));
+  --clr-rose-400: hsl(var(--clr-rose-hsl-400));
+  --clr-rose-500: hsl(var(--clr-rose-hsl-500));
+  --clr-rose-900: hsl(var(--clr-rose-hsl-900));
+
+  --font-family-default: 'RedHatText';
+
+  --fw-thin: 400;
+  --fw-regular: 600;
+  --fw-bold: 700;
+
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 2.5rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--fs-300);
+  color: var(--clr-rose-900);
+  background-color: var(--clr-rose-100);
+}
+
+@media (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
