@@ -69,3 +69,7 @@ body {
     place-items: center;
   }
 }
+
+.grid-layout {
+  display: grid;
+}
